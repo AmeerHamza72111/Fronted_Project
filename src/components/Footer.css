@@ -1,0 +1,96 @@
+/* src/components/Footer.css */
+
+.footer {
+    background-color: #fff;
+    border-top: 2px solid rgba(138, 138, 138, 1);
+    padding: 20px 0;
+    margin-top: 200px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logo1 {
+    
+    font-size: 24px;
+    margin-top: 50px;
+    text-align: start;
+}
+.adjustingCol
+{
+    display: flex;
+justify-content: space-around;
+}
+
+.text1 {
+    flex: 0 0 100%;
+    margin: 20px 0px;
+    width: 70%;
+    text-align: justify;
+    color: rgba(30, 40, 50, 0.75);
+
+
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+
+
+
+}
+
+.social-media {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.icon1 {
+    color: rgba(30, 40, 50, 1);
+    font-size: 1rem;
+}
+
+.heading1 {
+    flex: 0 0 100%;
+    text-align: start;
+    margin-top: 50px;
+}
+
+.visa {
+    flex: 0 0 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+.Columns3
+{
+margin-top: 20px;
+display: flex;
+justify-content: space-around;
+}
+
+.catalog-links {
+    flex: 0 0 100%;
+    text-align: start;
+    
+  }
+  
+  .catalog-links a {
+    text-decoration: none;
+    color: #333; 
+  }
+  
+  .catalog-links a:hover {
+    color: rgba(166, 61, 91, 1); 
+  }
+

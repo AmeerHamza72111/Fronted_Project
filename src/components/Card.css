@@ -1,0 +1,103 @@
+/* App.css */
+
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  border: none;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 380px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+
+}
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-details {
+  text-align: left;
+}
+
+.rating {
+  color: gold;
+  margin-left: auto;
+}
+
+.name-rating-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nameClass {
+  font-family: Poppins;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(72, 72, 72, 1)
+}
+
+.txt1 {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(138, 138, 138, 1);
+
+
+
+}
+
+.txt2 {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(72, 72, 72, 1);
+
+
+}
+
+.price {
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: rgba(72, 72, 72, 1);
+  ;
+
+}
+
+.shop-now-button {
+  background-color: rgba(166, 61, 91, 1);
+  width: 163px;
+  height: 43px;
+  border-radius: 10.37px;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 8px rgb(158, 158, 158);
+}
