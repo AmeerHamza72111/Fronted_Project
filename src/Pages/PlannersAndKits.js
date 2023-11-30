@@ -3,9 +3,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import BackGround from "../components/BackGround";
 import Heading1 from "../components/Heading1";
 import Card from "../components/Card";
-import img from "../images/Images.jpg";
+import img from "../images/image 631.jpg";
 import img1 from "../images/Images (1).jpg";
 import Footer from "../components/Footer";
+
 const products = [
   {
     id: 1,

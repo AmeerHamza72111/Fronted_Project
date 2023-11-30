@@ -1,10 +1,14 @@
 // Card.js
+
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./Card.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
 
 const Card = ({ product }) => {
   const { id, name, image, rating, price, text1, text2 } = product;
+  const navigate = useNavigate();
 
   const renderStars = () => {
     const stars = [];
@@ -31,10 +35,25 @@ const Card = ({ product }) => {
             <span>${price}</span>
           </p>
 
-          <button className="shop-now-button">
+          <button
+            className="shop-now-button"
+            onClick={() => {
+              navigate(`/product/${id}`, {
+                state: {
+                  product,
+                  name: "hamza",
+                },
+              });
+            }}
+          >
             <FontAwesomeIcon icon={faBagShopping} className="icon" />
             Shop Now
           </button>
+          {/* 
+          <Link to={`/product/${id}`} >
+            <FontAwesomeIcon icon={faBagShopping} className="icon" />
+            Shop Now
+          </Link> */}
         </div>
       </div>
     </div>
