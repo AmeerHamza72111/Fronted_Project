@@ -28,7 +28,8 @@
 
 .card-image {
   max-width: 100%;
-  height: auto;
+  height: 200px;
+  border-radius: 10px;
 }
 
 .card-details {
@@ -46,6 +47,7 @@
 }
 
 .nameClass {
+  margin-top: 10px;
   font-family: Poppins;
   font-size: 21px;
   font-weight: 500;
@@ -98,5 +100,10 @@
   border-radius: 10.37px;
   color: white;
   border: none;
-  box-shadow: 0 4px 8px rgb(158, 158, 158);
+ 
+}
+.shop-now-button:hover {
+  background-color: rgb(162, 27, 65);
+      color: #fff;
+      transform: scale(1.02);
 }

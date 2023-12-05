@@ -12,13 +12,22 @@
   .heading {
     color:#aa314bff ;
     margin-bottom: 10px;
+    
+  font-family: Volkhove;
+  font-weight: 700;
   }
   
   .description {
     color: black;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 18px;
     width: 50%;
    margin: auto;
+   font-family: Poppins;
+   font-weight: 400;
+
+line-height: 27px;
+letter-spacing: 0em;
+text-align: center;
+
   }
   

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Volkhov';
+    src: local('Volkhov'), url(../public/fonts/Hedvig_Letters_Serif/HedvigLettersSerif-Regular-VariableFont_opsz.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: local('Volkhov-Bold'), url(../public/fonts/Poppins/Poppins-Black.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
