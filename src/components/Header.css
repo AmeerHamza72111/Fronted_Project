@@ -11,6 +11,20 @@
     border-bottom: 1px solid rgb(218, 218, 218);
     
   }
+  .font1234
+  {
+    font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0.02em;
+text-align: left;
+
+  }
+  .paddingClass2{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
   .adjustCenter{
     display: flex !important;
     justify-content: center !important; 

@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import "./ProductDetails.css";
 import img1 from "../images/Images.jpg";
-import img2 from "../images/image 59.jpg";
-import img3 from "../images/image 572.jpg";
-import img4 from "../images/image 571.jpg";
+import img2 from "../images/newimg1.jpg";
+import img3 from "../images/image 63.jpg";
+import img4 from "../images/image 631.jpg";
 import { useLocation } from "react-router-dom";
 import ColorPicker from "./ColorPicker";
 import CartButton from "./CartButton";
 import Header from "./Header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRecycle, faTruck } from "@fortawesome/free-solid-svg-icons";
+import TabDescReview from "./TabDescReview";
 
 const ProductDetails = () => {
   const location = useLocation();
@@ -126,6 +127,7 @@ const ProductDetails = () => {
           </div>
         </div>
       </div>
+      <TabDescReview />
     </>
   );
 };

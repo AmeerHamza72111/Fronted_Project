@@ -1,0 +1,140 @@
+ .tabs {
+    display: flex;
+  
+  }
+  .paddingClass1
+  {
+    padding: 50px;
+  }
+  
+  .tab {
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-bottom: none;
+    
+ 
+  }
+  
+  .tab.active {
+    border-bottom: 2px solid black;
+  }
+  
+  .tab-content {
+    
+    padding: 50px;
+    margin-top: -1px; 
+    
+  }
+
+/* TabDescReview.css */
+.tabs-container {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin: 50px;
+
+  }
+  
+  .tab {
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .tab:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .tab.active {
+    border-bottom: 2px solid black;
+  }
+  
+  .tab-content {
+    margin-top: 10px;
+  }
+  
+  /* Styles for Reviews Tab */
+  
+  .review-container {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .rating1 {
+    color: gold;
+    margin-left: auto;
+  
+  }
+  
+  .rating span {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .rating img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    margin-top: 10px;
+    position: relative;
+  }
+  
+  .progress-bar div {
+    height: 100%;
+    background-color: #4caf50;
+  }
+  
+  .progress-bar span {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .more-reviews {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .more-reviews button {
+    
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    background-color: white;
+  }
+  
+  .more-reviews button:hover {
+    color: #45a049;
+  }
+  
+  

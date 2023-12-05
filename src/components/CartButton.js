@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import "../components/CartButton.css";
+import { useNavigate } from "react-router-dom";
+import CartItem from "./CartItem";
+import Card from "./Card";
 
 const CartButton = () => {
   const [quantity, setQuantity] = useState(0);
   const [liked, setLiked] = useState(false);
+  // const { id, name, image, rating, price, text1, text2 } = product;
+  const navigate = useNavigate();
 
   const handleIncrement = () => {
     setQuantity(quantity + 1);
@@ -16,7 +21,18 @@ const CartButton = () => {
   };
 
   const handleBuyNow = () => {
-    // Implement your "Buy Now" logic
+    // <>
+    //   <Card onProductClick={onProductClick} />
+    //   <CartItem clickedProduct={clickedProduct} />
+    // </>;
+
+    navigate(`/CartItem`);
+    // navigate(`/CartItem/${id}`, {
+    //   state: {
+    //     product,
+    //   },
+    // });
+
     console.log("Buy Now clicked");
   };
 

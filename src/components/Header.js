@@ -10,8 +10,8 @@ import Header2 from "./Header2";
 const Header = () => {
   return (
     <>
-      <div className="">
-        <div className="header-container container">
+      <div className="paddingClass2">
+        <div className="header-container font1234">
           <div className="search-icon">
             <button className="search-button">
               <FontAwesomeIcon icon={faSearch} className="icon" />
