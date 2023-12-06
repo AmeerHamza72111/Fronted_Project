@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./ProductDetails.css";
 import img1 from "../images/Images.jpg";
 import img2 from "../images/newimg1.jpg";
@@ -15,10 +15,18 @@ import TabDescReview from "./TabDescReview";
 const ProductDetails = () => {
   const location = useLocation();
   const [bigImage, setBigImage] = useState(location.state.product.image);
-
+  // const productsArray = [location.state.product];
+  const [productsArray, setProductsArray] = useState([]);
   const changeBigImage = (newImage) => {
     setBigImage(newImage);
   };
+
+  useEffect(
+    function () {
+      localStorage.setItem("cardItem", JSON.stringify(productsArray));
+    },
+    [productsArray]
+  );
 
   const renderStars = () => {
     const stars = [];
@@ -31,7 +39,17 @@ const ProductDetails = () => {
   const handleColorSelect = (color) => {
     console.log(`Product ordered with color: ${color}`);
   };
+  const handleBuyNow = function (newProduct) {
+    console.log("clicked", newProduct);
+    alert("Item Added to cart  !!!       Click shopping to view cart");
+    setProductsArray([...productsArray, newProduct]);
+  };
 
+  const arrayprod = () => {
+    for (let i = 0; i < productsArray.length; i++) {
+      // console.log(productsArray[i]);
+    }
+  };
   return (
     <>
       <Header />
@@ -81,6 +99,8 @@ const ProductDetails = () => {
                 </div>
                 <div>
                   <p className="rating1">{renderStars()}</p>
+                  <p> {arrayprod()} </p>
+
                   <p className="">{location.state.product.text2}</p>
                   <p className="">{location.state.product.text1}</p>
                 </div>
@@ -93,7 +113,9 @@ const ProductDetails = () => {
                 </div>
               </div>
               <ColorPicker onColorSelect={handleColorSelect} />
-              <CartButton />
+              <CartButton
+                handleBuyNow={() => handleBuyNow(location.state.product)}
+              />
               <div className="search-buttons-container mt-5">
                 <div className="search-button2">
                   <FontAwesomeIcon

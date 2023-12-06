@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import CartItem from "./CartItem";
 import Card from "./Card";
 
-const CartButton = () => {
+const CartButton = ({ handleBuyNow }) => {
   const [quantity, setQuantity] = useState(0);
   const [liked, setLiked] = useState(false);
   // const { id, name, image, rating, price, text1, text2 } = product;
@@ -18,22 +18,6 @@ const CartButton = () => {
     if (quantity > 0) {
       setQuantity(quantity - 1);
     }
-  };
-
-  const handleBuyNow = () => {
-    // <>
-    //   <Card onProductClick={onProductClick} />
-    //   <CartItem clickedProduct={clickedProduct} />
-    // </>;
-
-    navigate(`/CartItem`);
-    // navigate(`/CartItem/${id}`, {
-    //   state: {
-    //     product,
-    //   },
-    // });
-
-    console.log("Buy Now clicked");
   };
 
   const toggleLike = () => {
