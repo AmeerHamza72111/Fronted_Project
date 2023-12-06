@@ -6,8 +6,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBagShopping, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import Header2 from "./Header2";
-
+import { useNavigate } from "react-router-dom";
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="paddingClass2">
@@ -33,7 +34,13 @@ const Header = () => {
             </button>
 
             {/* Shopping Button */}
-            <button className="search-button">
+            <button
+              className="search-button"
+              onClick={() => {
+                // onProductClick(product);
+                navigate(`/CartItem`, {});
+              }}
+            >
               <FontAwesomeIcon
                 icon={faBagShopping}
                 style={{ color: "#aa314b" }}
